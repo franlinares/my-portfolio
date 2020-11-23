@@ -1,0 +1,73 @@
+@import "src/styles/abstracts/variables";
+@import "src/styles/base/animations";
+
+
+///////////////////////////////////////
+// INTRO
+
+.intro {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+
+  &__logo-box {
+    
+  }
+
+  &__logo {
+    font-size: 1.75rem;
+    color: $color-primary;
+   
+  }
+
+  &__text-box {
+   margin-left: 5rem; 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   animation: moveInBottom .6s ease-out 1s;
+   animation-fill-mode: backwards;
+
+  }
+
+  &__icons {
+    font-size: 1.75rem;
+    
+  }
+
+  &__link {
+    color: $color-secondary;
+
+    &:not(:last-child) {
+      margin-right: 1.2rem;
+    }
+  }
+ 
+}
+
+///////////////////////////////////////
+// HEADING
+
+.heading-primary {
+  
+
+  &--main {
+    display: block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: $color-primary;
+  }
+
+  &--sub {
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: $color-primary;
+  margin-bottom: 1.2rem;
+}
