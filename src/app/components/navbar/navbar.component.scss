@@ -1,5 +1,7 @@
 @import "src/styles/abstracts/variables";
 
+////NAVBAR
+
 .navigation {
 
 
@@ -146,3 +148,16 @@
     transform: rotate(-135deg);
   }
 }
+
+////BUTTON BACK
+
+ .back__box {
+    position: fixed;
+    top: 9rem;
+    left: 5.5rem;
+  }
+
+  .back__logo {
+    font-size: 1.75rem;
+    color: $color-primary;
+  }
