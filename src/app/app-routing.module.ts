@@ -11,6 +11,7 @@ import { ContactComponent } from 'src/app/components/contact/contact.component';
 const routes: Routes = [
   {path: 'home', component: IntroComponent},
   {path: 'about', component: AboutComponent},
+  {path: '', loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule) },
   {path: 'contact', component: ContactComponent},
   {path: '', pathMatch: 'full', redirectTo: 'home'},
 ];

@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { ProjectsModule } from 'src/app/projects/projects.module';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IntroComponent } from './components/intro/intro.component';
@@ -18,7 +21,8 @@ import { ContactComponent } from './components/contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ProjectsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

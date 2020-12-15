@@ -38,7 +38,8 @@
 
   &__link {
     color: $color-secondary;
-
+    font-size: 1.9rem;
+    
     &:not(:last-child) {
       margin-right: 1.2rem;
     }

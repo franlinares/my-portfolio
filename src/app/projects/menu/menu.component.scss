@@ -1,0 +1,43 @@
+@import "src/styles/abstracts/variables";
+
+.menu {
+  height: 25rem;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  &__links {
+    cursor: pointer;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 3rem;
+    color: $color-black;
+    
+
+    // &:hover {
+    //   text-decoration: underline;
+      
+    // }
+    
+  }
+}
+
+.heading {
+  font-size: 6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-primary;
+  margin-bottom: 1rem;
+}
+
+//// Change Link color
+
+.item-color {
+  color: $color-secondary;
+}
