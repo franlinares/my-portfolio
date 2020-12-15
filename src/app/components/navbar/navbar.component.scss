@@ -64,7 +64,7 @@
   }
 
   &__link {
-
+    
     &:link,
     &:visited {
       display: inline-block;
@@ -77,6 +77,9 @@
       background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
       background-size: 230%;
       transition: all .4s;
+
+     // Para ocultar los enlaces del navbar
+      visibility: hidden;
     }
 
     &:hover,
@@ -91,13 +94,20 @@
   //FUNCTIONALITY
 
   &__checkbox:checked ~ &__background {
-    transform: scale(90);
+    transform: scale(100);
   }
 
   &__checkbox:checked ~ &__nav {
-    opacity: 1;
     width: 100%;
+    opacity: 1;
+      
   }
+
+  &__checkbox:checked ~ &__nav > &__list > &__item > &__link {
+    visibility: visible;
+      
+  }
+
 
   //ICON
 
@@ -155,9 +165,14 @@
     position: fixed;
     top: 4.5rem;
     left: 4rem;
+    z-index: 99;
   }
 
   .back__logo {
     font-size: 1.75rem;
     color: $color-primary;
+
+    :hover {
+      animation: heartbeat 1.5s ease-in-out infinite both;
+    }
   }
