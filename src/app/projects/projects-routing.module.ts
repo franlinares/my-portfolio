@@ -8,12 +8,10 @@ import { VideoComponent } from 'src/app/projects/video/video.component';
 
 
 
-
 const routes: Routes = [
   { path: 'development', component: DevelopmentComponent },
-  // { path: 'development', component: DevelopmentComponent },
   { path: 'video', component: VideoComponent },
-  { path: '**', pathMatch:'full', redirectTo: 'routePath' }
+  { path: '', pathMatch:'full', redirectTo: 'home' }
 ];
 
 @NgModule({
