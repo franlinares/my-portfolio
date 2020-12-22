@@ -8,23 +8,28 @@
   width:100%;
   display:flex;
   align-items:space-around;
-  max-width:1200px;
+  // max-width:1200px;
+  max-width:1600px;
 }
 
 .tile {
-  width:500px;
-  height:380px;
+  // width:750px;
+  // height:450px;
+  width: 500px;
+  height: 325px;
   margin:10px;
   background-color:$color-primary;
   display:inline-block;
   background-size:cover;
   position:relative;
-  cursor:pointer;
+  // cursor:pointer;
   transition: all 0.4s ease-out;
-  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+  // box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+  box-shadow: 0 1rem 2.5rem rgba($color-black, .2);
+  // border: 1px solid $color-primary;
   overflow:hidden;
   color:white;
-  
+  // border-radius: 5px;
 }
 
 .tile img {
@@ -58,7 +63,7 @@
   font-weight:300;
   margin:20px 0 0 0;
   // font-style:italic;
-   transform: translateX(200px);
+  transform: translateX(200px);
 }
 
 .tile p {
@@ -161,3 +166,4 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 .fa-github-square:hover {
   color: $color-secondary;
 }
+
