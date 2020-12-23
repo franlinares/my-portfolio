@@ -1,5 +1,5 @@
 export class Projects {
-  _id: number;
+  _id: string;
   name: string;
   type: string;
   tech: string;
@@ -8,7 +8,7 @@ export class Projects {
   github: string;
 
   constructor(item?: any) {
-    this._id = item?._id || 0;
+    this._id = item?._id || '';
     this.name = item?.name || '';
     this.type = item?.type || '';
     this.tech = item?.tech || '';

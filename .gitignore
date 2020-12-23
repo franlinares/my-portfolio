@@ -7,9 +7,12 @@
 # Only exists if Bazel was run
 /bazel-out
 
+# environment dev
+src/environments/environment.dev.ts
+
 # dependencies
 /node_modules
-.env
+
 
 # profiling files
 chrome-profiler-events*.json
