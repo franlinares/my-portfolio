@@ -7,16 +7,18 @@
   margin:100px auto 0 auto;
   width:100%;
   display:flex;
+  flex-wrap: wrap;
   align-items:space-around;
   // max-width:1200px;
-  max-width:1600px;
+  max-width:1400px;
+  margin-bottom: 5rem;
 }
 
 .tile {
   // width: 396px;
   // height: 266px;
-  width: 500px;
-  height: 300px;
+  width: 430px;
+  height: 250px;
   margin:10px;
   background-color:$color-primary;
   display:inline-block;
