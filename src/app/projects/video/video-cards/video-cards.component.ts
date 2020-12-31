@@ -19,7 +19,6 @@ export class VideoCardsComponent implements OnInit {
   ngOnInit(): void {
     this.videosService.getVideos()
       .subscribe(resp => {
-        console.log(resp);
         this.videos.push(...resp);
       })
   }
@@ -33,7 +32,7 @@ export class VideoCardsComponent implements OnInit {
       // grow:'fullscreen',
       backdrop: 'change-back',
       showCloseButton: true,
-      closeButtonHtml: '<i class="fas fa-times"></i>',
+      closeButtonHtml: '<img src="https://img.icons8.com/ios/24/000000/multiply.png"/>',
       showConfirmButton:false,
       html: 
           `<iframe width="100%"; 
