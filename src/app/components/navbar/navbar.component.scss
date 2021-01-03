@@ -21,6 +21,13 @@
     box-shadow: 0 1rem 3rem rgba($color-black, .2);
     text-align: center;
     cursor: pointer;
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 7rem;
+      width: 7rem;
+      top: 2rem;
+      right: 3rem;
+    }
   }
 
   &__background {
@@ -35,6 +42,13 @@
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
     // transform: scale(80);
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 6rem;
+      width: 6rem;
+      top: 2.5rem;
+      right: 3.5rem;
+    }
   }
 
   &__nav {
