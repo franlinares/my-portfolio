@@ -1,5 +1,49 @@
 //POPUP
 
+@import "src/styles/abstracts/variables";
+
 .back-sweet {
   background: rgba($color-primary, .8) !important;
+
+}
+
+.swal2-popup {
+  
+  @media only screen and (max-width: $bp-largest) {
+    width: 70% !important; 
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 80% !important; 
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: 100% !important; 
+  }
+
+  @media only screen and (max-width: $bp-400) {
+    width: 100% !important; 
+  }
+}
+
+.swal2-html-container iframe {
+  @media only screen and (max-width: $bp-largest) {
+    height: 455px !important; 
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    height: 365px !important; 
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    height: 215px !important; 
+  }
+
+  @media only screen and (max-width: $bp-400) {
+    height: 185px !important; 
+  }
+
+  @media only screen and (max-width: $bp-extra-small) {
+    height: 145px !important; 
+  }
 }
