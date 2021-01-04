@@ -1,0 +1,71 @@
+@import "src/styles/abstracts/variables";
+
+.footer {
+  height: 15rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba($color-grey-dark-2, 0.6);
+  
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 7rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: 0rem;
+    }
+   
+  }
+
+  &__social {
+
+    
+  }
+
+  &__link {
+    margin-right: 1rem;
+    color: $color-secondary;
+    font-size: 1.6rem;
+  }
+
+  &__copyright {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 7rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      align-items: center;
+      margin-right: 0rem;
+    }
+    
+    &--main {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      
+    }
+  }
+}
+
+.heading {
+  color: $color-primary;
+  font-size: 3.4rem;
+  font-weight: 300;
+  // text-transform: uppercase;
+  font-style: italic;
+
+  &--mail {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $color-black;
+    font-weight: 700;
+  }
+}

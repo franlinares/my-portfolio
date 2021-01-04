@@ -19,10 +19,12 @@
 
   @media only screen and (max-width: $bp-smallest) {
     width: 100% !important; 
+    padding: 1rem !important;
   }
 
   @media only screen and (max-width: $bp-400) {
-    width: 100% !important; 
+    width: 100% !important;
+    padding: 1rem !important; 
   }
 }
 
@@ -36,14 +38,14 @@
   }
 
   @media only screen and (max-width: $bp-small) {
-    height: 215px !important; 
+    height: 220px !important;
   }
 
   @media only screen and (max-width: $bp-400) {
-    height: 185px !important; 
+    height: 182px !important; 
   }
 
-  @media only screen and (max-width: $bp-extra-small) {
-    height: 145px !important; 
-  }
+  // @media only screen and (max-width: $bp-extra-small) {
+  //   height: 145px !important; 
+  // }
 }

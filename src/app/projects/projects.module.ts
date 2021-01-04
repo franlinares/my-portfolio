@@ -11,6 +11,7 @@ import { VideoComponent } from './video/video.component';
 import { CardsComponent } from './development/cards/cards.component';
 import { VideoCardsComponent } from './video/video-cards/video-cards.component';
 
+import { FooterComponent } from 'src/app/components/footer/footer.component';
 
 
 
@@ -20,11 +21,17 @@ import { VideoCardsComponent } from './video/video-cards/video-cards.component';
     DevelopmentComponent, 
     VideoComponent, 
     CardsComponent, 
-    VideoCardsComponent],
+    VideoCardsComponent,
+    FooterComponent
+  ],
   imports: [
     CommonModule,
     ProjectsRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+  ],
+  exports: [
+    FooterComponent
   ]
+  
 })
 export class ProjectsModule { }

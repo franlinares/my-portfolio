@@ -10,7 +10,7 @@
   align-items:space-around;
   // max-width:1200px;
   max-width:1400px;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   justify-content: center;
 
   @media only screen and (max-width: $bp-extra) {
@@ -51,7 +51,7 @@
 
   @media only screen and (max-width: $bp-smallest) {
     width: 90%;
-    height: 240px;
+    height: 230px;
   }
 
   @media only screen and (max-width: $bp-400) {
