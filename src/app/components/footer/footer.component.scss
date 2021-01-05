@@ -12,16 +12,21 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    line-height: 1.9;
+  }
+
+  @media only screen and (max-width: $bp-400) {
+    line-height:2.1;
   }
 
   &__cta {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 7rem;
+    margin-left: 5rem;
 
     @media only screen and (max-width: $bp-medium) {
-      margin-left: 0rem;
+      margin-left: 0rem; 
     }
    
   }
@@ -35,12 +40,16 @@
     margin-right: 1rem;
     color: $color-secondary;
     font-size: 1.6rem;
+
+    @media only screen and (max-width: $bp-400) {
+      font-size: 1.6rem;
+    }
   }
 
   &__copyright {
     display: flex;
     align-items: flex-end;
-    margin-right: 7rem;
+    margin-right: 5rem;
 
     @media only screen and (max-width: $bp-medium) {
       align-items: center;
@@ -50,6 +59,11 @@
     &--main {
       font-size: 1.1rem;
       margin-bottom: 1rem;
+
+      @media only screen and (max-width: $bp-400) {
+        font-size: 1rem;
+    margin-bottom: 0;
+      }
       
     }
   }
@@ -62,10 +76,18 @@
   // text-transform: uppercase;
   font-style: italic;
 
+  @media only screen and (max-width: $bp-400) {
+    font-size: 3rem;
+  }
+
   &--mail {
     font-size: 1.2rem;
     text-decoration: none;
     color: $color-black;
     font-weight: 700;
+
+    @media only screen and (max-width: $bp-400) {
+      font-size: 1.1rem;
+    }
   }
 }

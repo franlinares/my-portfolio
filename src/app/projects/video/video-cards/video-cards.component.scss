@@ -19,10 +19,12 @@
 
   @media only screen and (max-width: $bp-medium) {
     margin: 65px auto 0 auto;
+    margin-bottom: 5rem;
   }
 
   @media only screen and (max-width: $bp-400) {
     margin: 55px auto 0 auto;
+    margin-bottom: 2rem;
   }
 }
 
@@ -56,7 +58,7 @@
 
   @media only screen and (max-width: $bp-400) {
     width: 90%;
-    height: 215px;
+    height: 210px;
   }
 
   @media only screen and (max-width: $bp-extra-small) {

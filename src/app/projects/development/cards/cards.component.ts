@@ -12,6 +12,7 @@ import { ProjectsService } from 'src/app/projects/services/projects.service';
 export class CardsComponent implements OnInit {
 
   projects: Projects[] = [];
+  searching = false;
 
   constructor(private projectsService: ProjectsService) { }
 
@@ -20,11 +21,13 @@ export class CardsComponent implements OnInit {
   }
 
   private loadProjects() {
+    this.searching = true;
     this.projectsService.getProjects().subscribe(resp => {
       if (resp) {
         this.projects = resp;  
         // console.log(resp);
       }
+      this.searching = false;
     })
   }
 

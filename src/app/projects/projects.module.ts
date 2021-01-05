@@ -12,6 +12,8 @@ import { CardsComponent } from './development/cards/cards.component';
 import { VideoCardsComponent } from './video/video-cards/video-cards.component';
 
 import { FooterComponent } from 'src/app/components/footer/footer.component';
+import { LoadingComponent } from 'src/app/components/loading/loading.component';
+
 
 
 
@@ -22,7 +24,8 @@ import { FooterComponent } from 'src/app/components/footer/footer.component';
     VideoComponent, 
     CardsComponent, 
     VideoCardsComponent,
-    FooterComponent
+    FooterComponent,
+    LoadingComponent
   ],
   imports: [
     CommonModule,
@@ -30,7 +33,8 @@ import { FooterComponent } from 'src/app/components/footer/footer.component';
     HttpClientModule,
   ],
   exports: [
-    FooterComponent
+    FooterComponent,
+    LoadingComponent
   ]
   
 })

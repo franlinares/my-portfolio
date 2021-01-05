@@ -14,6 +14,7 @@ import { IntroComponent } from './components/intro/intro.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+// import { LoadingComponent } from './components/loading/loading.component';
 // import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { ContactComponent } from './components/contact/contact.component';
     NavbarComponent,
     AboutComponent,
     ContactComponent,
+    // LoadingComponent,
     // FooterComponent
   ],
   imports: [
